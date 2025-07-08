@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import Footer from '@/components/modules/landing/Footer';
 import Header from '@/components/modules/landing/Header';
+import { LIST_CERTIFICATES } from '@/contants/listCertificates';
 import StatsSection from '@/components/modules/landing/StatsSection';
 import FilterButtons from '@/components/modules/landing/FilterButtons';
 import CertificateGrid from '@/components/modules/landing/CertificateGrid';
-import { LIST_CERTIFICATES } from '@/contants/listCertificates';
 
 const Landing = () => {
     const [selectedFilter, setSelectedFilter] = useState('all');
@@ -23,7 +23,7 @@ const Landing = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-800">
+        <div className="min-h-screen bg-gray-100 text-gray-800 font-Poppins">
             <Header />
             
             <main className="max-w-7xl mx-auto p-4 space-y-6">
